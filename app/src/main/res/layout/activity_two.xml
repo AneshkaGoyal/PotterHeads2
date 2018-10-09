@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:id="@+id/layoutone">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bellatrix" />
+
+            <EditText
+                android:id="@+id/ans_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Voldemort's supporter"
+                android:inputType="textCapWords"
+                android:textColorHint="#ffff"
+                android:textColor="#ffff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Next"
+                android:id="@+id/layout_two"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/layouttwo">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/kreecher"
+                />
+
+            <EditText
+                android:id="@+id/ans_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Black's elf"
+                android:textColor="#d51717"
+                android:textColorHint="#911e1e"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Next"
+                android:id="@+id/layout_three"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/layoutthree">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tonks" />
+
+            <EditText
+                android:id="@+id/ans_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Order of Pheonix"
+                android:textColor="#d51717"
+                android:textColorHint="#d51717"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Score"
+                android:id="@+id/layout_score"/>
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        tools:context=".MainActivity">
+        <TextView
+            android:id="@+id/ques_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="16sp"
+            android:text="What was the name of Sorcerer's stone guarding animal ?"
+            android:textColor="#773939"
+            />
+        <EditText
+            android:id="@+id/ans_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Dog"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <TextView
+            android:id="@+id/ques_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="What was the original name of Lord Voldemort ?"
+            android:textColor="#773939"
+            />
+        <EditText
+            android:id="@+id/ans_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <TextView
+            android:id="@+id/ques_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="How many childern did the Weasley's have ?"
+            android:textColor="#773939"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/ans_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+
+                android:onClick="increment"
+                android:text="+" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ques_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="What were the names of Harry Potter's parents ?"
+            android:textColor="#773939"
+            />
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Vernon"
+                android:textAllCaps="true"
+                android:layout_marginLeft="8dp"
+
+
+                />
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Petunia"
+                android:textAllCaps="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+                />
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Lilly"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            />
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="James"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            />
+        <TextView
+            android:id="@+id/ques_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="What is the name of gamekeeper and Keeper of Keys and Grounds at Hogwarts?"
+            android:textColor="#773939"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans4">
+        <RadioButton
+            android:id="@+id/opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="Hagrid"
+            android:layout_marginLeft="8dp"
+
+
+
+            />
+        <RadioButton
+            android:id="@+id/opt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="Mrs. Norris"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+
+
+            />
+        <RadioButton
+            android:id="@+id/opt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="Argus Filch"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+
+            />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/ques_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="What is the age of admission to Hogwarts ?"
+            android:textColor="#773939"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp"
+                android:text="10 years"
+                android:layout_marginLeft="8dp"
+
+
+
+                />
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp"
+                android:text="11 years"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+
+                />
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp"
+                android:text="12 years"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:text="Submit"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
